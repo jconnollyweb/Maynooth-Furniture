@@ -1,0 +1,286 @@
+body{
+    background-color:#AE937D ;
+}
+
+.container{
+    background-color:#AE937D ;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-container{
+    background-color: white;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+
+
+header{
+    max-width: 1024px;
+    background-color: white;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+   
+
+}
+
+.header-nav{
+    background-color: #42A599;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+    font-family: 'Jomhuria', cursive;
+    font-size: 30px;
+    
+
+    
+}
+.header-nav a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    
+    
+}
+
+main{
+   
+    margin-bottom: 10px;
+    height: 400px;
+    background-color: blue;
+    font-family: 'Kaushan Script', cursive;
+    bottom: 8px;
+    left: 16px;
+   
+}
+main h1 {
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 30px;
+    margin-right: 150px;
+    float:right;
+    
+}
+
+.hero-image {
+    background-image: url(images/seating.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%; 
+   object-fit: none;
+   
+   
+}
+
+ .hero-text {
+    font-size: 80px;
+    color:white;
+} 
+/* this got the text into position, forget the other crap */
+
+
+
+
+
+
+
+.col{
+   
+    width: 30%;
+    margin-bottom: 40px;
+    background-color:#D9B495 ;
+    justify-content: space-around;
+    box-shadow: 5px 5px #9f865628;
+    
+}
+
+h2{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    padding: 10px 0 10px 0;
+    color: white;
+    text-decoration: none;
+
+}
+
+h1{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    width:95%;
+    height: 80%;
+    margin-left: 8px;
+    margin-top: 8px;
+    
+}
+
+.col a{
+    text-decoration: none;
+}
+
+.footer-container{
+    background-color:#986F4E ;
+    min-height: 100px;
+    margin-top: 20px;
+    border-top-left-radius:40px;
+    
+   
+}
+
+footer{
+    max-width: 1224px;
+    background-color:#986F4E ;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    font-family: 'Jomhuria', cursive;
+    font-size: 25px;
+   
+
+}
+
+.mybutton{
+    padding: 10px 25px;
+
+}
+
+.logo a{
+    padding: 20px 5px;
+}
+
+.mysocial img{
+    margin-right: 1px;
+    margin-left: 10px;
+    
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.mob-wrapper img{
+    display: none;
+}
+
+.mob-button{
+    display: none;
+}
+
+.navbutton{
+    display: none;
+}
+
+
+@media(max-width:808px){
+
+    .col{
+        width: 47%;
+    }
+
+    .hide-desktop-only{
+        display: block;
+    }
+
+    nav .mybutton{
+        display: none;
+    }
+
+    .mysocial{
+        display: none;
+    }
+
+    .container h2{
+        font-size: 30px;
+    }
+
+    .mob-wrapper img{
+        display: block;
+    }
+
+    .navbutton{
+        display: block;
+        padding: 5px 5px;
+        border: 5px;
+        font-family:'Jomhuria', cursive ;
+        text-decoration: none;
+        /* position absolute- ignores relatives and only does what parent wrapper says */
+        /* position: absolute; */
+        background-color:#F4A42C ;
+        font-size: 26px;
+       
+    }
+
+    .navbutton:hover{
+        background-color: rgb(236, 192, 111);
+    }
+   
+}
+
+.mob-wrapper{
+    display: block;
+    color: rgb(197, 24, 197);
+}
+
+@media(max-width:462px){
+    .col{
+        width: 100%;
+    }
+
+    .container h2{
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 50px;
+        
+    } 
+
+    
+    
+   
+}
+
+
+
+/* mobile view */
+@media(max-width:360px){
+    .col{
+        width: 100%;
+    }
+
+    .container h2{
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 40px;
+        
+    } 
+
+    
+   
+}

@@ -1,0 +1,431 @@
+body{
+    background-color:rgb(89, 140, 160);
+}
+
+
+.header-container{
+    background-color: white;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+
+
+header{
+    max-width: 1024px;
+    background-color: white;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+   
+
+}
+
+header nav img{
+    margin: 0 20px;
+    position:relative;
+}
+
+
+.header-nav{
+    background-color: #42A599;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+    font-family: 'Jomhuria', cursive;
+    font-size: 30px;
+    
+
+    
+}
+.header-nav a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    
+    
+}
+
+
+main{
+   
+    margin-bottom: 10px;
+    height: 400px;
+    background-color: blue;
+    font-family: 'Kaushan Script', cursive;
+    bottom: 8px;
+    left: 16px;
+   
+}
+main h1 {
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 30px;
+    margin-right: 150px;
+    float:right;
+    
+}
+
+.hero-image {
+    background-image: url(images/wish-hero1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%; 
+   object-fit: none;
+   
+   
+}
+
+ .hero-text {
+    font-size: 80px;
+    color:white;
+} 
+/* this got the text into position, forget the other crap */
+
+
+
+
+
+h1{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Jomhuria', cursive;
+    font-size: 30px;
+    
+
+}
+
+.container h1{
+    padding: 20px 0;
+    font-family:'Jomhuria', cursive ;
+    font-size: 50px;
+}
+
+.basket{
+    display: flex;
+}
+
+.products{
+    flex: 0.75;
+}
+
+.product{
+    display: flex;
+    width:100%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+.product:hover{
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1.01);
+}
+
+.product img{
+    width:300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product img:hover{
+    transform: scale(1.04);
+}
+
+.product-info{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.product-name, .product-price {
+    margin-bottom: 20px;
+}
+
+.product-remove{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px ;
+
+}
+
+.product-remove:hover{
+    background-color: white;
+    color: green;
+    font-weight: 600;
+    border: 1px solid green;
+}
+
+.product-quantity input{
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+.fas{
+    margin-right: 5px;
+}
+
+.basket-total{
+    flex: 0.25;
+    margin-left: 20px;
+    padding: 20px;
+    height: 240px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.basket-total p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.basket-total a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(157, 209, 230);
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.basket-total a:hover{
+    background-color:rgb(30, 160, 211);
+}
+
+
+
+
+
+.footer-container{
+    background-color:rgb(157, 209, 230) ;
+    min-height: 100px;
+    margin-top: 20px;
+    border-top-left-radius:40px;
+    
+   
+}
+
+footer{
+    max-width: 1224px;
+    background-color:rgb(157, 209, 230) ;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    font-family: 'Jomhuria', cursive;
+    font-size: 25px;
+   
+
+}
+
+.mybutton{
+    padding: 10px 25px;
+
+}
+
+.logo a{
+    padding: 20px 5px;
+}
+
+.mysocial img{
+    margin-right: 1px;
+    margin-left: 10px;
+    
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.mob-wrapper img{
+    display: none;
+}
+
+.mob-button{
+    display: none;
+}
+
+.navbutton{
+    display: none;
+}
+
+@media(max-width:1200px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .basket{
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:808px){
+
+   
+
+    .hide-desktop-only{
+        display: block;
+    }
+
+    nav .mybutton{
+        display: none;
+    }
+
+    .mysocial{
+        display: none;
+    }
+
+    nav img{
+        display: none;
+    }
+    
+    .mob-wrapper img{
+        display: block;
+    }
+
+    .navbutton{
+        display: block;
+        padding: 5px 5px;
+        border: 5px;
+        font-family:'Jomhuria', cursive ;
+        text-decoration: none;
+        /* position absolute- ignores relatives and only does what parent wrapper says */
+        /* position: absolute; */
+        background-color:#F4A42C ;
+        font-size: 26px;
+       
+    }
+
+    .navbutton:hover{
+        background-color: rgb(236, 192, 111);
+    }
+   
+}
+
+.mob-wrapper{
+    display: block;
+    color: rgb(197, 24, 197);
+}
+@media(max-width:600px){
+    .remove{
+        display: none;
+    }
+    .product{
+        height: 200px;
+    }
+    .product img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .basket-total{
+        margin-right: 20px;
+    }
+
+    .product-name, .product-price,.product-offer{
+        margin-bottom: 2px;
+    }
+
+}
+
+@media(max-width:462px){
+    .product-remove{
+      background: none;
+      float: right;
+      margin-bottom: 5px;
+      justify-content: space-around;
+    }
+
+    i .fas{
+        font-size: 30px;
+
+        margin-bottom: 5px;
+        justify-content: space-around;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .hero-text {
+        font-size: 50px;
+        
+    } 
+
+    .product-quantity{
+        margin-bottom: 10px;
+    }
+
+    .product{
+        height: 250px;
+    }
+    
+   
+}
+
+
+
+/* mobile view */
+@media(max-width:375px){
+   
+
+    .hero-text {
+        font-size: 40px;
+        
+    } 
+    .product-remove{
+        background: none;
+        float: right;
+        margin-bottom: 5px;
+        justify-content: space-around;
+      }
+  
+      i .fas{
+          font-size: 30px;
+          
+          margin-bottom: 5px;
+          justify-content: space-around;
+          margin-top: 10px;
+          position: relative;
+      }
+  
+
+    
+   
+}
